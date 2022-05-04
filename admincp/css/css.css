@@ -1,0 +1,326 @@
+* {
+    box-sizing: border-box;
+}
+a
+{
+    text-decoration: none;
+    text-emphasis: none;
+}
+li{
+  border-color: rgb(0, 89, 255);
+  border-radius: 5px;
+}
+li:hover{
+  background-color: rgb(0, 89, 255);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  max-width: 300px;
+  color: white;
+}
+img{
+  border-radius: 5px;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+a:visited
+{
+    color: black;
+}
+a:link
+{
+    color: black;
+}
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(29, 29, 29);
+}
+.header h1 {
+    font-size: 40px;
+    color: greenyellow;
+}
+body {
+    font-family: Arial;
+    padding: 10px;
+    background: #f1f1f1;
+}
+.topnav {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+    overflow: hidden;
+    background-color: rgb(49, 49, 49);
+}
+.topnav a {
+    float: left;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.topnav a:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+    background-color: rgb(99, 99, 99);
+    color: yellow;
+}
+
+.column {
+    float: left;
+    padding: 10px;
+}
+
+.column.side {   
+    float: left;
+    width: 25%;
+}
+
+.column.middle {
+    float: left;
+    width: 75%;
+}
+/* Định dạng thẻ */
+.card {
+    background-color: rgb(250, 250, 250);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+/* Định dạng thẻ ảnh sản phẩm */
+.imgcard {
+  min-width: auto;
+  min-height: auto;
+  display: flex;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  outline: 1px;
+  outline-style: solid;
+  outline-color: rgb(0, 89, 255);
+}
+/* Định dạng thẻ tên sản phẩm */
+.namecard {
+  min-width: auto;
+  min-height: 80px;
+  max-width: 200px;
+  display: flex;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+/* Định dạng thẻ giá sản phẩm */
+.pricecard {
+  min-width: auto;
+  min-height: auto;
+  max-width: 200px;
+  display: flex;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+/* Định dạng nút chi tiết sản phẩm */
+.detailcard {
+  min-width: 200px;
+  min-height: 20px;
+  display: flex;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 122, 122);
+  border: none;
+  padding: 5px;
+  font-weight: bold;
+  font-size: 18px;
+}
+.detailcard:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: rgb(255, 255, 255);
+  background-color: red;
+}
+
+/* Định dạng nút thêm vào giỏ */
+.addtocart {
+  min-width: 200px;
+  min-height: 20px;
+  display: flex;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(153, 255, 158);
+  border: none;
+  padding: 5px;
+  font-weight: bold;
+  font-size: 18px;
+}
+.addtocart:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: rgb(255, 255, 255);
+  background-color: rgb(38, 165, 0);
+}
+
+/* Thẻ sản phẩm */
+.productcard {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: 1px;
+  outline-style: solid;
+  outline-color: rgb(0, 89, 255);
+  margin-top: 5px;
+  display: inline-block;
+  min-width: 220px;
+  min-height: 375px;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.productcard:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 89, 255);
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.footer {
+    padding: 10px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 10px;
+}
+@media screen and (max-width: 1400px) {
+  .column.side, .column.middle {   
+    width: 100%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+.shadow-right {
+    border-radius: 5px;
+    background-color: black;
+    -moz-box-shadow: 3px 3px 5px 0px #666;
+    -webkit-box-shadow: 3px 3px 5px 0px #666;
+    box-shadow: 3px 3px 5px 0px #666;
+}
+/* Scroll bar */
+.scroll
+{
+    width: 275px;
+    max-height: 600px;
+    overflow: auto;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: rgb(216, 216, 216); 
+    border-radius: 5px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(30, 255, 0); 
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(12, 146, 0); 
+    border-radius: 5px;
+  }
+
+  /* Back to top*/
+  #myBtn {
+    display: none; /* Mặc định ẩn */
+    position: fixed;
+    bottom: 21px;
+    right: 21px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: rgb(80, 80, 80);
+    color: rgb(60, 255, 0);
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px; 
+    font-size: 20px;
+    opacity: 0.5;
+  }
+  #myBtn:hover {
+    background-color: rgb(46, 46, 46);
+    opacity: 1;
+  }
+  /* Input box */
+  input[type=text] {
+    width: 100px;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 3px solid rgb(94, 255, 0);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    outline: none;
+    border-style: outset;
+  }
+  input[type=text]:focus {
+    border: 3px solid rgb(255, 0, 0);
+    border-style: inset;
+  }
+  /* Purchase button */
+  #purchase{
+    font-weight: bold;
+    align-items: right;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    color: rgb(0, 46, 196);
+    border: none;
+    cursor: pointer;
+    font-size: large;
+    font-size: 25px;
+    outline: 2px;
+    outline-style: solid;
+    outline-color: rgb(0, 46, 196);
+  }
+  #purchase:hover{
+    background-color: rgb(0, 46, 196);
+    color: rgb(255, 255, 255);
+  }
+  #delpurchase{
+    font-weight: bold;
+    align-items: right;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    color: rgb(255, 0, 0);
+    border: none;
+    cursor: pointer;
+    font-size: large;
+    font-size: 25px;
+    outline: 2px;
+    outline-style: solid;
+    outline-color: rgb(255, 0, 0);
+  }
+  #delpurchase:hover{
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+  }
